@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <!--Codificació de caràcters especials com UTF-8-->
+    <meta charset="UTF-8">
+    <!--Pàgina Responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadada que ajuda al motor de búsqueda per recomanar la teva pàgina segons les paraules que es busca-->
+    <meta name="keywords" content="viatges, turisme, destinacions, vacançes, ciutats, país, agencia, relax, cultura, gastronomia">
+     <!-- Metadada autor pàgina -->
+    <meta name="author" content="Marc Balagué Torrens">
+    <!-- La següent metadada, es per al motors de búsqueda, en aquest cas la pàgina apareix en els motors de búsqueda i segueix els enllaços-->
+    <meta name="robots" content="index, follow">
+    <!--Descripció de la pàgina web-->
+    <meta name="description" content="About us agència de viatge">
+
+    <!--Títol de la pàgina-->
+    <title>Nomad Trail</title>
+
+    <!-- Importar el framework Bootstrap, per a estils predefinits i disseny responsiu-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlazar JS de Bootstrap (con Popper.js para el menú desplegable) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Link a la pàgina CSS personalitzada -->
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- Favicon-->
+    <link rel="icon" href="../imatges/logo/logo-favicon.png" type="image/png">
+
+    <!-- Importar el Google Fonts, per a tipus de lletra personalitzats -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+
+    <!--Link del arxiu JavaScript per a funcionalitats addicionals-->
+    <script src="script.js"></script>
+</head>
+<body id="nomad">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <!-- "container-fluid", el contingut ocupi tota l'amplada disponible. -->
+        <div class="container-fluid">
+            <!-- La classe "navbar-brand" identifica el logo i el nom de l'empresa, destacant-los visualment. -->
+            <a class="navbar-brand custom-brand" href="../index.html">
+                <!-- Logo de l'empresa -->
+                <!-- Imatge del logo amb dimensions definides. -->
+                <img src="../imatges/logo/logo.png" alt="Nomad Trail" width="80" height="80">
+                <!-- Nom de l'empresa -->
+                <span>Nomad Trail</span>
+            </a>
+            
+            <!-- Botó del menú desplegable -->
+            <!-- Apareix només en pantalles petites per col·lapsar o expandir el menú de navegació. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Icona del botó (hamburguesa) en dispositius petits. -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contingut del menú -->
+            <!-- "collapse navbar-collapse" oculta o mostra el menú segons la mida de la pantalla. -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Llista del menú -->
+                <!-- "navbar-nav" és una classe Bootstrap que crea una llista estilitzada per a la navegació. -->
+                <!-- "ms-auto" mou els elements del menú cap a la dreta. -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- Element del menú -->
+                    <!-- Cada "li" conté un enllaç amb la classe "nav-link" per aplicar estils de navegació. -->
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="../index.html">Home</a>
+                    </li>
+                    <!--Tots els altres elements del menú estan a sota però es tot el rato el mateix-->
+                    <li class="nav-item">
+                        <a class="nav-link custom-link page" href="#">Nomad Trail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="destinacio.html">Destinació</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="activitats.html">Activitats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="contacte.html">Contacte</a>
+                    </li>
+                    
+                    <!-- Botó "Inicia Sessió" -->
+                    <!-- Últim element del menú, amb un estil personalitzat mitjançant "custom-button". -->
+                    <li class="nav-item">
+                        <a href="log.html" class="nav-link custom-button">Iniciar sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" id="post-navbar">
+        <!-- Secció sobre l'empresa amb la classe py-5 per afegir un espai vertical -->
+        <section id="sobre-nosaltres" class="container py-5">
+            <div class="row align-items-center">
+                <!-- Descripció de l'empresa: col-md-6 per dividir l'espai en dues meitats per pantalles mitjanes i grans -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">Qui som?</h2>
+                    <!-- Paràgraf amb text justificat (text-justify) i estil de text destacat amb la classe lead -->
+                    <p class="lead text-justify">
+                        Som un equip apassionat per oferir-te experiències úniques de viatge. Ens apassiona connectar les persones amb cultures, sabors i destinacions que els ajudin a créixer i a gaudir d'unes vacances inoblidables. Els nostres valors es basen en la qualitat, la sostenibilitat i la personalització de cada viatge per a tu.
+                    </p>
+                    <p class="text-justify">
+                        Creiem en un turisme responsable, que respecti les cultures locals i l'entorn. Amb la nostra experiència i dedicació, volem ser els teus guies en aquest emocionant viatge de descoberta.
+                    </p>
+                </div>
+                <!-- Logotip de l'empresa: col-md-6 per dividir l'espai a la meitat i text-center per centrar la imatge -->
+                <div class="col-md-6 text-center">
+                    <img src="../imatges/logo/logo-favicon.png" alt="Logotip de l'empresa" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        
+            <div class="row mt-5">
+                <!-- Títol per a la secció de valors de l'empresa, amb un estil especial per a la classe section-title -->
+                <div class="col-12 text-center">
+                    <h2 class="mb-4 section-title">Els nostres valors</h2>
+                    <div class="row">
+                        <!-- Cada valor es mostra com una card de Bootstrap amb shadow-sm per una ombra suau -->
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-0 rounded">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-globe2 fs-2"></i> <!-- Icona de Bootstrap Icons -->
+                                    <h5 class="card-title">Sostenibilitat</h5>
+                                    <p class="card-text">Ens preocupem per un turisme respectuós amb el medi ambient.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-0 rounded">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-person-fill fs-2"></i> <!-- Icona de Bootstrap Icons -->
+                                    <h5 class="card-title">Personalització</h5>
+                                    <p class="card-text">Cada viatge és únic, adaptat a les teves necessitats i desitjos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-0 rounded">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-heart fs-2"></i> <!-- Icona de Bootstrap Icons -->
+                                    <h5 class="card-title">Passió</h5>
+                                    <p class="card-text">Estimem el que fem i ho transmetem en cada experiència de viatge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Secció per triar el tipus de viatge, amb una classe de separació py-5 per espaiar verticalment -->
+        <section class="container py-5">
+            <h2 class="text-center mb-4 section-title">Tria el teu tipus de viatge</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4"> <!-- g-4 afegeix espai entre les columnes -->
+                <!-- Targetes per cada tipus de viatge, amb imatges i un estil de fons fosc amb text blanc -->
+                <div class="col">
+                    <div class="card shadow-sm border-0 rounded">
+                        <img src="../imatges/tipus/gastronomia.jpg" class="card-img-top" alt="Viatge Gastronòmic">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Gastronòmic</h5>
+                            <p class="card-text">Explora sabors de tot el món.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm border-0 rounded">
+                        <img src="../imatges/tipus/relax.png" class="card-img-top" alt="Viatge de Relax">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Relax</h5>
+                            <p class="card-text">Relaxat en destinacions tranquil·les.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm border-0 rounded">
+                        <img src="../imatges/tipus/cultural.png" class="card-img-top" alt="Viatge Cultural">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Cultural</h5>
+                            <p class="card-text">Submergeix-te en patrimoni i tradicions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        
+        <!-- Secció amb el mapa de la ubicació -->
+        <section class="container py-5">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="section-title mb-4">On estem?</h2>
+                    <div id="map" class="map-container" style="height: 400px;">
+                        <!-- Inclou un iframe de Google Maps per mostrar la ubicació -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.637022207307!2d1.2366632392537757!3d41.11665456817962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3fd2eed85f6a3%3A0x47308b4ab91cb9ef!2sInstitut%20Francesc%20Vidal%20i%20Barraquer!5e0!3m2!1ses!2ses!4v1734546080463!5m2!1ses!2ses"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Secció de les estadístiques de l'empresa -->
+        <section id="statistics" class="text-center mb-5 last-section">
+            <div class="row">
+                <!-- Cada estadística es mostra en una columna de Bootstrap amb imatge i text -->
+                <div class="col-md-4 statistics-item">
+                    <img src="../imatges/exits/persones.jpg" alt="Viatgers Feliços" class="img-fluid">
+                    <div class="content">
+                        <h3 class="display-4">10.000+</h3>
+                        <p>Viatgers Feliços</p>
+                    </div>
+                </div>
+                <div class="col-md-4 statistics-item">
+                    <img src="../imatges/exits/destinacions.jpg" alt="Destinacions Increïbles" class="img-fluid">
+                    <div class="content">
+                        <h3 class="display-4">50+</h3>
+                        <p>Destinacions Increïbles</p>
+                    </div>
+                </div>
+                <div class="col-md-4 statistics-item">
+                    <img src="../imatges/exits/20.jpg" alt="Any de Excel·lència" class="img-fluid">
+                    <div class="content">
+                        <h3 class="display-4">20</h3>
+                        <p>Any de Excel·lència</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <!-- Secció del peu de pàgina amb crèdits i enllaços legals -->
+        <p>&copy; 2024 Nomad Trail. Tots els drets reservats.</p>
+        
+        <!-- Enllaços per a mostrar la política de privacitat i termes i condicions -->
+        <p>
+            <a href="#" class="text-white me-3 toggle-text" data-target="privacy-policy">Política de privacitat</a>
+            <a href="#" class="text-white toggle-text" data-target="terms-conditions">Termes i condicions</a>
+        </p>
+        
+        <!-- Contingut de la política de privacitat -->
+        <div id="privacy-policy" class="legal-text" style="display: none;">
+            <h2>Política de privacitat (LOPD)</h2>
+            <p>En aquesta secció, expliquem com recopilem, utilitzem i protegim les teves dades personals. És important que llegeixis aquesta política de privacitat per entendre com gestionem la teva informació personal.</p>
+            
+            <h3>1. Quins dades recopilem?</h3>
+            <p>Recopilem dades com el teu nom, adreça de correu electrònic, entre altres, que són necessàries per oferir-te els nostres serveis.</p>
+            
+            <h3>2. Com utilitzem les teves dades?</h3>
+            <p>Les dades recopilades es fan servir per processar el teu registre, gestionar el teu compte, enviar-te comunicacions relacionades amb els nostres serveis i garantir la seguretat del lloc web.</p>
+            
+            <h3>3. Com protegim les teves dades?</h3>
+            <p>Implementem mesures de seguretat per protegir les teves dades personals. No obstant això, cal que siguis conscient que cap mètode de transmissió per internet o emmagatzematge electrònic és completament segur.</p>
+            
+            <h3>4. Els teus drets</h3>
+            <p>Com a usuari, tens el dret a accedir, rectificar, esborrar o restringir l'ús de les teves dades personals. Pots exercir aquests drets posant-te en contacte amb nosaltres mitjançant els canals habilitats.</p>
+        </div>
+        
+        <!-- Contingut dels termes i condicions -->
+        <div id="terms-conditions" class="legal-text" style="display: none;">
+            <h2>Termes i condicions (RGPD)</h2>
+            <p>Els següents termes i condicions regeixen l'ús dels nostres serveis i la relació amb els nostres usuaris. En utilitzar els nostres serveis, acceptes complir amb aquests termes.</p>
+            
+            <h3>1. Acceptació dels termes</h3>
+            <p>En accedir al nostre lloc web i utilitzar els nostres serveis, acceptes aquests termes i condicions. Si no estàs d'acord, no utilitzis els nostres serveis.</p>
+            
+            <h3>2. Ús del servei</h3>
+            <p>Aquest lloc web permet als usuaris accedir a contingut relacionat amb els serveis de Nomad Trail. Els usuaris han de fer servir el lloc web de manera legal i conforme a les normatives vigents.</p>
+            
+            <h3>3. Responsabilitats</h3>
+            <p>L'usuari és responsable de la seguretat de les seves dades d'accés i es compromet a notificar qualsevol ús no autoritzat del seu compte. No ens responsabilitzem dels danys ocasionats pel mal ús del lloc web per part de l'usuari.</p>
+            
+            <h3>4. Canvis en els termes</h3>
+            <p>Ens reservem el dret de modificar aquests termes en qualsevol moment. Les modificacions es publicaran en aquesta pàgina i estaran disponibles per a la seva consulta.</p>
+        </div>
+    </footer>    
+
+    <!-- Vincle al arxiu JS -->
+    <script src="../script.js"></script>
+</body>
+</html>

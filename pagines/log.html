@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <!--Codificació de caràcters especials com UTF-8-->
+    <meta charset="UTF-8">
+    <!--Pàgina Responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadada que ajuda al motor de búsqueda per recomanar la teva pàgina segons les paraules que es busca-->
+    <meta name="keywords" content="viatges, turisme, destinacions, vacançes, ciutats, país, agencia, relax, cultura, gastronomia">
+     <!-- Metadada autor pàgina -->
+    <meta name="author" content="Marc Balagué Torrens">
+    <!-- La següent metadada, es per al motors de búsqueda, en aquest cas la pàgina apareix en els motors de búsqueda i segueix els enllaços-->
+    <meta name="robots" content="index, follow">
+    <!--Descripció de la pàgina web-->
+    <meta name="description" content="Log-in agència de viatges">
+
+    <!--Títol de la pàgina-->
+    <title>Nomad Trail</title>
+
+    <!-- Importar el framework Bootstrap, per a estils predefinits i disseny responsiu-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlazar JS de Bootstrap (con Popper.js para el menú desplegable) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Link a la pàgina CSS personalitzada -->
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- Favicon-->
+    <link rel="icon" href="../imatges/logo/logo-favicon.png" type="image/png">
+
+    <!-- Importar el Google Fonts, per a tipus de lletra personalitzats -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+
+    <!--Link del arxiu JavaScript per a funcionalitats addicionals (prova)-->
+    <script src="script.js"></script>
+</head>
+<body id="login">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <!-- "container-fluid", el contingut ocupi tota l'amplada disponible. -->
+        <div class="container-fluid">
+            <!-- La classe "navbar-brand" identifica el logo i el nom de l'empresa, destacant-los visualment. -->
+            <a class="navbar-brand custom-brand" href="../index.html">
+                <!-- Logo de l'empresa -->
+                <!-- Imatge del logo amb dimensions definides. -->
+                <img src="../imatges/logo/logo.png" alt="Nomad Trail" width="80" height="80">
+                <!-- Nom de l'empresa -->
+                <span>Nomad Trail</span>
+            </a>
+            
+            <!-- Botó del menú desplegable -->
+            <!-- Apareix només en pantalles petites per col·lapsar o expandir el menú de navegació. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Icona del botó (hamburguesa) en dispositius petits. -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contingut del menú -->
+            <!-- "collapse navbar-collapse" oculta o mostra el menú segons la mida de la pantalla. -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Llista del menú -->
+                <!-- "navbar-nav" és una classe Bootstrap que crea una llista estilitzada per a la navegació. -->
+                <!-- "ms-auto" mou els elements del menú cap a la dreta. -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- Element del menú -->
+                    <!-- Cada "li" conté un enllaç amb la classe "nav-link" per aplicar estils de navegació. -->
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="../index.html">Home</a>
+                    </li>
+                    <!--Tots els altres elements del menú estan a sota però es tot el rato el mateix-->
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="nomad_trail.html">Nomad Trail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="destinacio.html">Destinació</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="activitats.html">Activitats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="contacte.html">Contacte</a>
+                    </li>
+                    
+                    <!-- Botó "Inicia Sessió" -->
+                    <!-- Últim element del menú, amb un estil personalitzat mitjançant "custom-button". -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link custom-button page-login">Iniciar sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="post-navbar" class="d-flex align-items-center last-section">
+        <div class="container">
+            <div class="row">
+                <!-- Columna per a "Inicia sessió" (mitjançant col-md-6 s'aconsegueix que ocupi la meitat de la pantalla en pantalles mitjanes i més grans) -->
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow" id="login-card">
+                        <!-- Títol de la secció de login amb un marge inferior -->
+                        <h4 class="mb-3">Inicia Sessió</h4>
+                        <form action="#" method="get">
+                            <!-- Camp per a l'entrada del correu amb classe form-control per estilitzar-lo -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correu</label>
+                                <input type="email" class="form-control" id="email" placeholder="Entra el teu correu" required>
+                            </div>
+                            <!-- Camp per a l'entrada de la contrasenya també amb classe form-control per estilitzar-lo -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contrasenya</label>
+                                <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                            </div>
+                            <!-- Contenidor amb d-flex per alinear horitzontalment els elements, i justify-content-between per distribuir l'espai -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Enllaç de canvi de contrasenya estilitzat amb la classe text-primary -->
+                                <a href="#" class="text-primary">Canviar contrasenya</a>
+                                <!-- Botó d'inici de sessió estilitzat amb la classe btn i btn-secondary -->
+                                <button type="submit" class="btn btn-secondary">Inicia Sessió</button>
+                            </div>
+                        </form>
+                        <hr>
+                        <!-- Botó per iniciar sessió amb Google estilitzat amb les classes btn i btn-outline-secondary, amb la imatge de Google a l'esquerra -->
+                        <button class="btn btn-outline-secondary w-100 mb-2">
+                            <img src="https://img.icons8.com/color/16/google-logo.png" alt="Google Logo"> Inicia sessió amb Google
+                        </button>
+                        <!-- Missatge en petit amb text-muted per fer-lo més discret -->
+                        <small class="text-muted">Si continues, estàs acceptant les polítiques de privacitat de l'empresa.</small>
+                    </div>
+                </div>
+    
+                <!-- Columna per a "Crear un compte" (igual que l'anterior, es fa servir col-md-6 per a la distribució de les columnes) -->
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow" id="register-card">
+                        <!-- Títol de la secció de registre amb marge inferior -->
+                        <h4 class="mb-3">Crear un Compte</h4>
+                        <!-- Text explicatiu sobre els avantatges de registrar-se -->
+                        <p>Crea un compte per obtenir tots els avantatges que hi ha a continuació:</p>
+                        <ul class="list-unstyled">
+                            <!-- Llista dels avantatges, estilitzada amb list-unstyled per eliminar els punts per defecte -->
+                            <li>• Crea i guarda itineraris personalitzats per als teus pròxims viatges.</li>
+                            <li>• Accedeix a ofertes exclusives i descomptes només per a usuaris registrats.</li>
+                            <li>• Organitza totes les teves reserves en un sol lloc de manera segura.</li>
+                            <li>• Col·labora amb amics en la planificació d'aventures conjuntes.</li>
+                            <li>• Rep recomanacions basades en els teus interessos i destinacions preferides.</li>
+                            <li>• Porta un registre dels teus viatges passats i futurs fàcilment.</li>
+                        </ul>
+                        <!-- Botó per crear un compte estilitzat amb btn i btn-dark per un fons fosc i ample (w-100) -->
+                        <button class="btn btn-dark w-100">Crear un compte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>       
+
+    <footer class="bg-dark text-white text-center py-3">
+        <!-- Secció del peu de pàgina amb crèdits i enllaços legals -->
+        <p>&copy; 2024 Nomad Trail. Tots els drets reservats.</p>
+        
+        <!-- Enllaços per a mostrar la política de privacitat i termes i condicions -->
+        <p>
+            <a href="#" class="text-white me-3 toggle-text" data-target="privacy-policy">Política de privacitat</a>
+            <a href="#" class="text-white toggle-text" data-target="terms-conditions">Termes i condicions</a>
+        </p>
+        
+        <!-- Contingut de la política de privacitat -->
+        <div id="privacy-policy" class="legal-text" style="display: none;">
+            <h2>Política de privacitat (LOPD)</h2>
+            <p>En aquesta secció, expliquem com recopilem, utilitzem i protegim les teves dades personals. És important que llegeixis aquesta política de privacitat per entendre com gestionem la teva informació personal.</p>
+            
+            <h3>1. Quins dades recopilem?</h3>
+            <p>Recopilem dades com el teu nom, adreça de correu electrònic, entre altres, que són necessàries per oferir-te els nostres serveis.</p>
+            
+            <h3>2. Com utilitzem les teves dades?</h3>
+            <p>Les dades recopilades es fan servir per processar el teu registre, gestionar el teu compte, enviar-te comunicacions relacionades amb els nostres serveis i garantir la seguretat del lloc web.</p>
+            
+            <h3>3. Com protegim les teves dades?</h3>
+            <p>Implementem mesures de seguretat per protegir les teves dades personals. No obstant això, cal que siguis conscient que cap mètode de transmissió per internet o emmagatzematge electrònic és completament segur.</p>
+            
+            <h3>4. Els teus drets</h3>
+            <p>Com a usuari, tens el dret a accedir, rectificar, esborrar o restringir l'ús de les teves dades personals. Pots exercir aquests drets posant-te en contacte amb nosaltres mitjançant els canals habilitats.</p>
+        </div>
+        
+        <!-- Contingut dels termes i condicions -->
+        <div id="terms-conditions" class="legal-text" style="display: none;">
+            <h2>Termes i condicions (RGPD)</h2>
+            <p>Els següents termes i condicions regeixen l'ús dels nostres serveis i la relació amb els nostres usuaris. En utilitzar els nostres serveis, acceptes complir amb aquests termes.</p>
+            
+            <h3>1. Acceptació dels termes</h3>
+            <p>En accedir al nostre lloc web i utilitzar els nostres serveis, acceptes aquests termes i condicions. Si no estàs d'acord, no utilitzis els nostres serveis.</p>
+            
+            <h3>2. Ús del servei</h3>
+            <p>Aquest lloc web permet als usuaris accedir a contingut relacionat amb els serveis de Nomad Trail. Els usuaris han de fer servir el lloc web de manera legal i conforme a les normatives vigents.</p>
+            
+            <h3>3. Responsabilitats</h3>
+            <p>L'usuari és responsable de la seguretat de les seves dades d'accés i es compromet a notificar qualsevol ús no autoritzat del seu compte. No ens responsabilitzem dels danys ocasionats pel mal ús del lloc web per part de l'usuari.</p>
+            
+            <h3>4. Canvis en els termes</h3>
+            <p>Ens reservem el dret de modificar aquests termes en qualsevol moment. Les modificacions es publicaran en aquesta pàgina i estaran disponibles per a la seva consulta.</p>
+        </div>
+    </footer>    
+
+    <!-- Vincle al arxiu JS -->
+    <script src="../script.js"></script>
+</body>
+</html>

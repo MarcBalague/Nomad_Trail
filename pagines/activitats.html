@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <!--Codificació de caràcters especials com UTF-8-->
+    <meta charset="UTF-8">
+    <!--Pàgina Responsiva-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadada que ajuda al motor de búsqueda per recomanar la teva pàgina segons les paraules que es busca-->
+    <meta name="keywords" content="viatges, turisme, destinacions, vacançes, ciutats, país, agencia, relax, cultura, gastronomia">
+     <!-- Metadada autor pàgina -->
+    <meta name="author" content="Marc Balagué Torrens">
+    <!-- La següent metadada, es per al motors de búsqueda, en aquest cas la pàgina apareix en els motors de búsqueda i segueix els enllaços-->
+    <meta name="robots" content="index, follow">
+    <!--Descripció de la pàgina web-->
+    <meta name="description" content="Activitas en viatges">
+
+    <!--Títol de la pàgina-->
+    <title>Activitats</title>
+
+    <!-- Importar el framework Bootstrap, per a estils predefinits i disseny responsiu-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlazar JS de Bootstrap (con Popper.js para el menú desplegable) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Link a la pàgina CSS personalitzada -->
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- Favicon-->
+    <link rel="icon" href="../imatges/logo/logo-favicon.png" type="image/png">
+
+    <!-- Importar el Google Fonts, per a tipus de lletra personalitzats -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+
+    <!--Link del arxiu JavaScript per a funcionalitats addicionals-->
+    <script src="script.js"></script>
+</head>
+<body id="activitats">
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <!-- "container-fluid", el contingut ocupi tota l'amplada disponible. -->
+        <div class="container-fluid">
+            <!-- La classe "navbar-brand" identifica el logo i el nom de l'empresa, destacant-los visualment. -->
+            <a class="navbar-brand custom-brand" href="../index.html">
+                <!-- Logo de l'empresa -->
+                <!-- Imatge del logo amb dimensions definides. -->
+                <img src="../imatges/logo/logo.png" alt="Nomad Trail" width="80" height="80">
+                <!-- Nom de l'empresa -->
+                <span>Nomad Trail</span>
+            </a>
+            
+            <!-- Botó del menú desplegable -->
+            <!-- Apareix només en pantalles petites per col·lapsar o expandir el menú de navegació. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Icona del botó (hamburguesa) en dispositius petits. -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contingut del menú -->
+            <!-- "collapse navbar-collapse" oculta o mostra el menú segons la mida de la pantalla. -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Llista del menú -->
+                <!-- "navbar-nav" és una classe Bootstrap que crea una llista estilitzada per a la navegació. -->
+                <!-- "ms-auto" mou els elements del menú cap a la dreta. -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- Element del menú -->
+                    <!-- Cada "li" conté un enllaç amb la classe "nav-link" per aplicar estils de navegació. -->
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="../index.html">Home</a>
+                    </li>
+                    <!--Tots els altres elements del menú estan a sota però es tot el rato el mateix-->
+                    <li class="nav-item">
+                        <a class="nav-link custom-link " href="nomad_trail.html">Nomad Trail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="destinacio.html">Destinació</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link page" href="#">Activitats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="contacte.html">Contacte</a>
+                    </li>
+                    
+                    <!-- Botó "Inicia Sessió" -->
+                    <!-- Últim element del menú, amb un estil personalitzat mitjançant "custom-button". -->
+                    <li class="nav-item">
+                        <a href="log.html" class="nav-link custom-button">Iniciar sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="post-navbar" class="container last-section">
+        <!-- Secció principal de destinacions dins del país seleccionat -->
+        
+        <!-- Secció: Espanya -->
+        <div class="country-section">
+            <div class="country-header">
+                <!-- Títol principal de la secció amb espaiat inferior proporcionat per Bootstrap -->
+                <h2 class="mb-5 section-title">Espanya</h2>
+            </div>
+            
+            <!-- Fila de ciutats destacades dins d'Espanya, utilitzant el sistema de graella de Bootstrap -->
+            <div class="row">
+                
+                <!-- Targeta: Madrid -->
+                <div class="col-md-4" id="madrid">
+                    <!-- Columna d'ample mitjà (md) que ocupa 4 de 12 columnes -->
+                    <div class="card city-card">
+                        <!-- Classe card de Bootstrap per a estilitzar elements de tipus targeta -->
+                        <img src="../imatges/pais/espanya/madrid_act.jpg" class="card-img-top" alt="Madrid">
+                        <!-- Classe card-img-top per indicar que la imatge està a la part superior de la targeta -->
+                        <div class="card-body">
+                            <!-- card-body per contenir el text i altres elements dins la targeta -->
+                            <h5 class="card-title">Madrid</h5>
+                            <p class="card-text">Visita el Museu del Prado, passeja pel Parc del Retiro i gaudeix de la vida nocturna a Malasaña.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Targeta: Barcelona -->
+                <div class="col-md-4" id="barcelona">
+                    <!-- Columna d'ample mitjà (md) que ocupa 4 de 12 columnes -->
+                    <div class="card city-card">
+                        <img src="../imatges/pais/espanya/barcelona_act.jpg" class="card-img-top" alt="Barcelona">
+                        <div class="card-body">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Explora la Sagrada Família, passeja per les Rambles i relaxa't a les platges de la ciutat.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Targeta: Sevilla -->
+                <div class="col-md-4" id="sevilla">
+                    <!-- Columna d'ample mitjà (md) que ocupa 4 de 12 columnes -->
+                    <div class="card city-card">
+                        <img src="../imatges/pais/espanya/sevilla_act.jpg" class="card-img-top" alt="Sevilla">
+                        <div class="card-body">
+                            <h5 class="card-title">Sevilla</h5>
+                            <p class="card-text">Visita l'Alcázar, gaudeix d'un espectacle de flamenc i passeja pel barri de Triana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    
+        <!-- El mateix codi repetit per a cada país -->
+        <!-- Secció: França -->
+        <div class="country-section">
+            <div class="country-header">
+                <h2 class="mb-5 section-title">França</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="paris">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/frança/paris_act.jpg" class="card-img-top" alt="París">
+                        <div class="card-body">
+                            <h5 class="card-title">París</h5>
+                            <p class="card-text">Visita la Torre Eiffel, explora el Museu del Louvre i passeja pel barri de Montmartre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="lio">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/frança/lio_act.jpg" class="card-img-top" alt="Lyon">
+                        <div class="card-body">
+                            <h5 class="card-title">Lió</h5>
+                            <p class="card-text">Descobreix la cuina local, visita el barri Vieux-Lyon i passeja pels seus parcs i jardins.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="marsella">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/frança/marsella_act.jpg" class="card-img-top" alt="Marsella">
+                        <div class="card-body">
+                            <h5 class="card-title">Marsella</h5>
+                            <p class="card-text">Gaudeix del port antic, visita el Museu de les Civilitzacions de l'Europa i el Mediterrani i les platges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Secció: Itàlia -->
+        <div class="country-section">
+            <div class="country-header">
+                <h2 class="mb-5 section-title">Itàlia</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="roma">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/italia/roma_act.jpg" class="card-img-top" alt="Roma">
+                        <div class="card-body">
+                            <h5 class="card-title">Roma</h5>
+                            <p class="card-text">Visita el Colosseu, la Fontana di Trevi i els jardins de la Villa Borghese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="milan">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/italia/milan_act.jpg" class="card-img-top" alt="Milà">
+                        <div class="card-body">
+                            <h5 class="card-title">Milà</h5>
+                            <p class="card-text">Descobreix la Catedral de Milà, visita el Museu de la Ciència i Tecnologia i passeja pels canals de Navigli.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="napols">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/italia/napols_act.jpg" class="card-img-top" alt="Nàpols">
+                        <div class="card-body">
+                            <h5 class="card-title">Nàpols</h5>
+                            <p class="card-text">Visita les ruïnes de Pompeia, prova la pizza napolitana i explora el Parc Nacional del Vesuvi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Secció: Estats Units -->
+        <div class="country-section">
+            <div class="country-header">
+                <h2 class="mb-5 section-title">Estats Units</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="nova_york">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/estats_units/nova_york_act.jpg" class="card-img-top" alt="Nova York">
+                        <div class="card-body">
+                            <h5 class="card-title">Nova York</h5>
+                            <p class="card-text">Visita l'Estàtua de la Llibertat, passeja per Central Park i explora el museu Metropolitano d'Art.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="los_angeles">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/estats_units/los_angeles_act.jpg" class="card-img-top" alt="Los Angeles">
+                        <div class="card-body">
+                            <h5 class="card-title">Los Angeles</h5>
+                            <p class="card-text">Visita Hollywood, relaxa't a les platges de Venice i explora el Museu Getty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="chicago">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/estats_units/chicago_act.jpg" class="card-img-top" alt="Chicago">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicago</h5>
+                            <p class="card-text">Visita el Willis Tower, passeja pel Millennium Park i descobreix la història del jazz a la ciutat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Secció: Mèxic -->
+        <div class="country-section">
+            <div class="country-header">
+                <h2 class="mb-5 section-title">Mèxic</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="cdmx">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/mexic/cdmx_act.jpg" class="card-img-top" alt="Ciutat de Mèxic">
+                        <div class="card-body">
+                            <h5 class="card-title">Ciutat de Mèxic</h5>
+                            <p class="card-text">Visita el Zócalo, explora Teotihuacán i passeja pel Bosque de Chapultepec.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="guadalajara">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/mexic/guadalajara_act.jpg" class="card-img-top" alt="Guadalajara">
+                        <div class="card-body">
+                            <h5 class="card-title">Guadalajara</h5>
+                            <p class="card-text">Gaudeix de la música mariachi, visita el Teatre Degollado i prova les tortas ahogades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="monterrey">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/mexic/monterrey_act.jpg" class="card-img-top" alt="Monterrey">
+                        <div class="card-body">
+                            <h5 class="card-title">Monterrey</h5>
+                            <p class="card-text">Visita el Cerro de la Silla, explora el Museu d'Art Contemporani i gaudeix de la gastronomia local.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Secció: Japó -->
+        <div class="country-section">
+            <div class="country-header">
+                <h2 class="mb-5 section-title">Japó</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="toquio">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/japo/toquio_act.jpg" class="card-img-top" alt="Tòquio">
+                        <div class="card-body">
+                            <h5 class="card-title">Tòquio</h5>
+                            <p class="card-text">Visita el Santuari Meiji, explora Akihabara per a la tecnologia i passeja pel parc Ueno.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="osaka">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/japo/osaka_act.jpg" class="card-img-top" alt="Osaka">
+                        <div class="card-body">
+                            <h5 class="card-title">Osaka</h5>
+                            <p class="card-text">Prova el takoyaki, visita el Castell d'Osaka i explora Universal Studios Japan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="kyoto">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/japo/kyoto_act.jpg" class="card-img-top" alt="Kyoto">
+                        <div class="card-body">
+                            <h5 class="card-title">Kyoto</h5>
+                            <p class="card-text">Visita els temples Kinkaku-ji i Fushimi Inari, i experimenta el hanami a la primavera.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Secció: Aràbia Saudita -->
+        <div class="country-section">
+            <div class="country-header">
+                <h2 class="mb-5 section-title">Aràbia Saudita</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="riyad">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/arabia/riyad_act.jpg" class="card-img-top" alt="Riyad">
+                        <div class="card-body">
+                            <h5 class="card-title">Riyad</h5>
+                            <p class="card-text">Visita el Masmak Fort, explora el Museu Nacional i passeja pel Districte Antic de Diriyah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="jiddah">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/arabia/jiddah_act.jpg" class="card-img-top" alt="Jiddah">
+                        <div class="card-body">
+                            <h5 class="card-title">Jiddah</h5>
+                            <p class="card-text">Visita la Corniche, el port antic i la Mesquita Al-Rahma, amb vistes espectaculars al mar Roig.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="meca">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/arabia/meca_act.jpg" class="card-img-top" alt="Meca">
+                        <div class="card-body">
+                            <h5 class="card-title">Meca</h5>
+                            <p class="card-text">Realitza el pelegrinatge de l'Hajj, visita la Gran Mesquita i explora el Museu de Meca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Xina -->
+        <div class="country-section">
+            <div class="country-header">
+                <h2 class="mb-5 section-title">Xina</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="guangzhou">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/xina/guangzhou_act.jpg" class="card-img-top" alt="Riyad">
+                        <div class="card-body">
+                            <h5 class="card-title">Guangzhou</h5>
+                            <p class="card-text">Visita la Canton Tower i explora el barri antic. Passeja pel riu per veure els ponts i la vida nocturna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="beijing">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/xina/beijing_act.jpg" class="card-img-top" alt="Beijing">
+                        <div class="card-body">
+                            <h5 class="card-title">Beijing</h5>
+                            <p class="card-text">Visita la Ciutat Prohibida, la Muralla Xinesa i el Temple del Cel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="shanghai">
+                    <div class="card city-card">
+                        <img src="../imatges/pais/xina/shangai_act.jpg" class="card-img-top" alt="Shanghai">
+                        <div class="card-body">
+                            <h5 class="card-title">Shanghai</h5>
+                            <p class="card-text">Descobreix el Bund, visita el Jardí Yuyuan i explora la vida nocturna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <!-- Secció del peu de pàgina amb crèdits i enllaços legals -->
+        <p>&copy; 2024 Nomad Trail. Tots els drets reservats.</p>
+        
+        <!-- Enllaços per a mostrar la política de privacitat i termes i condicions -->
+        <p>
+            <a href="#" class="text-white me-3 toggle-text" data-target="privacy-policy">Política de privacitat</a>
+            <a href="#" class="text-white toggle-text" data-target="terms-conditions">Termes i condicions</a>
+        </p>
+        
+        <!-- Contingut de la política de privacitat -->
+        <div id="privacy-policy" class="legal-text" style="display: none;">
+            <h2>Política de privacitat (LOPD)</h2>
+            <p>En aquesta secció, expliquem com recopilem, utilitzem i protegim les teves dades personals. És important que llegeixis aquesta política de privacitat per entendre com gestionem la teva informació personal.</p>
+            
+            <h3>1. Quins dades recopilem?</h3>
+            <p>Recopilem dades com el teu nom, adreça de correu electrònic, entre altres, que són necessàries per oferir-te els nostres serveis.</p>
+            
+            <h3>2. Com utilitzem les teves dades?</h3>
+            <p>Les dades recopilades es fan servir per processar el teu registre, gestionar el teu compte, enviar-te comunicacions relacionades amb els nostres serveis i garantir la seguretat del lloc web.</p>
+            
+            <h3>3. Com protegim les teves dades?</h3>
+            <p>Implementem mesures de seguretat per protegir les teves dades personals. No obstant això, cal que siguis conscient que cap mètode de transmissió per internet o emmagatzematge electrònic és completament segur.</p>
+            
+            <h3>4. Els teus drets</h3>
+            <p>Com a usuari, tens el dret a accedir, rectificar, esborrar o restringir l'ús de les teves dades personals. Pots exercir aquests drets posant-te en contacte amb nosaltres mitjançant els canals habilitats.</p>
+        </div>
+        
+        <!-- Contingut dels termes i condicions -->
+        <div id="terms-conditions" class="legal-text" style="display: none;">
+            <h2>Termes i condicions (RGPD)</h2>
+            <p>Els següents termes i condicions regeixen l'ús dels nostres serveis i la relació amb els nostres usuaris. En utilitzar els nostres serveis, acceptes complir amb aquests termes.</p>
+            
+            <h3>1. Acceptació dels termes</h3>
+            <p>En accedir al nostre lloc web i utilitzar els nostres serveis, acceptes aquests termes i condicions. Si no estàs d'acord, no utilitzis els nostres serveis.</p>
+            
+            <h3>2. Ús del servei</h3>
+            <p>Aquest lloc web permet als usuaris accedir a contingut relacionat amb els serveis de Nomad Trail. Els usuaris han de fer servir el lloc web de manera legal i conforme a les normatives vigents.</p>
+            
+            <h3>3. Responsabilitats</h3>
+            <p>L'usuari és responsable de la seguretat de les seves dades d'accés i es compromet a notificar qualsevol ús no autoritzat del seu compte. No ens responsabilitzem dels danys ocasionats pel mal ús del lloc web per part de l'usuari.</p>
+            
+            <h3>4. Canvis en els termes</h3>
+            <p>Ens reservem el dret de modificar aquests termes en qualsevol moment. Les modificacions es publicaran en aquesta pàgina i estaran disponibles per a la seva consulta.</p>
+        </div>
+    </footer>    
+    
+    <!-- Vincle al arxiu JS -->
+    <script src="../script.js"></script>
+</body>
+</html>
