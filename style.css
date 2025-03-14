@@ -191,6 +191,13 @@
         background: #f8f9fa;
     }
 
+    .carrousel-image {
+        max-width: 25%; /* Ajusta la mida segons vulguis */
+        height: auto;   /* Manté la proporció de la imatge */
+        display: block;
+        margin: 0 auto; /* Centra la imatge */
+    }
+
     /* TEXT DEL TÍTOL DE LES CARDS (valor afegit) */
     .card-title {
         color: #ff6600 !important; 
