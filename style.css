@@ -126,7 +126,7 @@
     /* BANNER */
         /* IMATGE BANNER */
             .banner {
-                background-image: url(imatges/banner.png);
+                background-image: url(imatges/banner.webp);
                 background-size: cover;
                 height: 80vh;
                 display: flex;
@@ -219,19 +219,19 @@
 
         /* LINK ICONES */
         .icon-flexibilitat {
-            background-image: url('imatges/qual/qual1.png');
+            background-image: url('imatges/qual/qual1.webp');
         }
 
         .icon-experiencies {
-            background-image: url('imatges/qual/qual2.png');
+            background-image: url('imatges/qual/qual2.webp');
         }
 
         .icon-qualitat {
-            background-image: url('imatges/qual/qual3.png');
+            background-image: url('imatges/qual/qual3.webp');
         }
 
         .icon-suport {
-            background-image: url('imatges/qual/qual4.png');
+            background-image: url('imatges/qual/qual4.webp');
         }
 
     /* CARROUSEL */
@@ -400,7 +400,7 @@
     /* GRAELLA BOOTSTRAP(informacio contacte) */
         /* FONS */
         .col-md-5.mb-4 {
-            background-image: url('imatges/contacte/fons-contacte.png');
+            background-image: url('imatges/contacte/fons-contacte.webp');
             background-size: cover; 
             background-position: center; 
             padding: 5%; 
@@ -461,7 +461,7 @@
 /* ------------------- PÀGINA LOG IN ------------------- */
     /* SECCIÓ COMPLETA */
     #login section {
-        background: url('imatges/login-banner/air-baloon.png') no-repeat center center/cover;
+        background: url('imatges/login-banner/air-baloon.webp') no-repeat center center/cover;
         min-height: 100vh; 
         margin-top: 20px;
     }
